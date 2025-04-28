@@ -53,6 +53,7 @@
 position: fixed;
 width: 100%;
 backdrop-filter: blur(10px);
+z-index: 999999;
 
   }
   .header_wrap{
@@ -422,4 +423,66 @@ font-family: "Nunito Sans",sans-serif;
 font-weight: 400;
 font-size: var(--font-x);
 color: var(--color-grey-1);
+}
+.review {
+background: var(--color-accent);
+color: var(--color-white);
+}
+.review_wrap {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 100px 0;
+position: relative;
+
+}
+.review_box{
+width: 80%;
+text-align: center;
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 2em;
+max-width: 600px;
+}
+.review_text{
+color: var(--color-white);
+}
+.review_author{
+  color: var(--color-white);
+}
+.review_pages{
+position: absolute;
+height: 3px;
+display: flex;
+gap: 6px;
+bottom: 2em;
+}
+.review_line{
+height: 100%;
+width: 30px;
+background: var(--color-white);
+opacity: 0.5;
+}
+.review_active{
+  opacity: 1;
+}
+.review_arrow{
+position: absolute;
+top: 50%;
+translate: 0 -50%;
+font-size: var(--font-xl);
+cursor: pointer;
+opacity: 0.6;
+transform: 0.3s;
+}
+.review_arrow:hover{
+  opacity: 1;
+  transition: 0.3s;
+}
+.review_arrow_left{
+left: 0;
+}
+.review_arrow_right{
+right: 0;
 }
